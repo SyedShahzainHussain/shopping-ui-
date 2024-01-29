@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_ui_flutter/extension/media_query_extension.dart';
+import 'package:shopping_ui_flutter/screens/product_screen/product_screen.dart';
 import 'package:shopping_ui_flutter/utils/color.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
@@ -204,7 +205,13 @@ class HomeScreen extends StatelessWidget {
                                       child: Stack(
                                         children: [
                                           InkWell(
-                                            onTap: () {},
+                                            onTap: () {
+                                              Navigator.push(
+                                                  context,
+                                                  MaterialPageRoute(
+                                                      builder: (context) =>
+                                                          const ProductScreen()));
+                                            },
                                             child: ClipRRect(
                                               borderRadius:
                                                   BorderRadius.circular(10),
@@ -340,7 +347,13 @@ class HomeScreen extends StatelessWidget {
                                   child: Stack(
                                     children: [
                                       InkWell(
-                                        onTap: () {},
+                                        onTap: () {
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      const ProductScreen()));
+                                        },
                                         child: ClipRRect(
                                           borderRadius:
                                               BorderRadius.circular(10),

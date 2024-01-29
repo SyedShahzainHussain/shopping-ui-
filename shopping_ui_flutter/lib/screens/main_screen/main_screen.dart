@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:shopping_ui_flutter/screens/cart_screen/cart_screen.dart';
 import 'package:shopping_ui_flutter/screens/home_screen/home_screen.dart';
 import 'package:shopping_ui_flutter/utils/color.dart';
 
@@ -21,7 +22,7 @@ class _MainScreenState extends State<MainScreen> {
         index: currentIndex,
         children: const [
           HomeScreen(),
-          Text("hello1 "),
+          CarScreen(),
           Text("hello2 "),
           Text("hello3 "),
           Text("hello4 "),
